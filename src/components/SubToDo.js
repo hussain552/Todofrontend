@@ -41,7 +41,7 @@ function SubToDo({ project }) {
 
     setIsUpdating(true);
     try {
-      const response = await axios.put(
+      await axios.put(
         `https://todobackend-l1vc.onrender.com/api/subtasks/${id}`,
         { title: updatedTitle }
       );
